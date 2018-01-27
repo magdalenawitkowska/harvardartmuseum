@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22069189201D0316000884C3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069188201D0316000884C3 /* ApiManager.swift */; };
+		2206918C201D0D8F000884C3 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206918B201D0D8F000884C3 /* AppConfig.swift */; };
+		2206918E201D0DE3000884C3 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206918D201D0DE3000884C3 /* Venue.swift */; };
+		22069190201D1993000884C3 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206918F201D1993000884C3 /* MockManager.swift */; };
+		22069192201D19AB000884C3 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069191201D19AB000884C3 /* DataAccess.swift */; };
+		22069194201D1BF8000884C3 /* ExhibitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069193201D1BF8000884C3 /* ExhibitionCell.swift */; };
 		22B3D2F0201CE66D00CF55FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D2EF201CE66D00CF55FD /* AppDelegate.swift */; };
-		22B3D2F2201CE66D00CF55FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D2F1201CE66D00CF55FD /* ViewController.swift */; };
-		22B3D2F5201CE66D00CF55FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3D2F3201CE66D00CF55FD /* Main.storyboard */; };
+		22B3D2F2201CE66D00CF55FD /* ExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D2F1201CE66D00CF55FD /* ExhibitionViewController.swift */; };
+		22B3D2F5201CE66D00CF55FD /* ExhibitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3D2F3201CE66D00CF55FD /* ExhibitionViewController.storyboard */; };
 		22B3D2F7201CE66D00CF55FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3D2F6201CE66D00CF55FD /* Assets.xcassets */; };
 		22B3D2FA201CE66D00CF55FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3D2F8201CE66D00CF55FD /* LaunchScreen.storyboard */; };
+		22FC874F201CFF0100E951C0 /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC874E201CFF0100E951C0 /* Exhibition.swift */; };
 		929244B9D523685C49E3ACAC /* Pods_HarvardArtMuseum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE4565ACA88CD3B7942BA94 /* Pods_HarvardArtMuseum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22069188201D0316000884C3 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		2206918B201D0D8F000884C3 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		2206918D201D0DE3000884C3 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		2206918F201D1993000884C3 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		22069191201D19AB000884C3 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
+		22069193201D1BF8000884C3 /* ExhibitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionCell.swift; sourceTree = "<group>"; };
 		22B3D2EC201CE66D00CF55FD /* HarvardArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvardArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3D2EF201CE66D00CF55FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22B3D2F1201CE66D00CF55FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22B3D2F4201CE66D00CF55FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22B3D2F1201CE66D00CF55FD /* ExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionViewController.swift; sourceTree = "<group>"; };
+		22B3D2F4201CE66D00CF55FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ExhibitionViewController.storyboard; sourceTree = "<group>"; };
 		22B3D2F6201CE66D00CF55FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B3D2F9201CE66D00CF55FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B3D2FB201CE66D00CF55FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FC874E201CFF0100E951C0 /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
 		2AE4565ACA88CD3B7942BA94 /* Pods_HarvardArtMuseum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarvardArtMuseum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E01C0A2969BDE7098E001EB /* Pods-HarvardArtMuseum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvardArtMuseum.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvardArtMuseum/Pods-HarvardArtMuseum.release.xcconfig"; sourceTree = "<group>"; };
 		826685A0B3C1538A5A663EE4 /* Pods-HarvardArtMuseum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvardArtMuseum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarvardArtMuseum/Pods-HarvardArtMuseum.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2206918A201D0D75000884C3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2206918B201D0D8F000884C3 /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		22B3D2E3201CE66D00CF55FD = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +83,61 @@
 		22B3D2EE201CE66D00CF55FD /* HarvardArtMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				2206918A201D0D75000884C3 /* Config */,
+				22FC874C201CF2E900E951C0 /* Views */,
+				22FC874B201CF2CC00E951C0 /* DataModels */,
+				22FC874A201CF2C200E951C0 /* ViewControllers */,
+				22FC8749201CF2B900E951C0 /* API */,
 				22B3D2EF201CE66D00CF55FD /* AppDelegate.swift */,
-				22B3D2F1201CE66D00CF55FD /* ViewController.swift */,
-				22B3D2F3201CE66D00CF55FD /* Main.storyboard */,
 				22B3D2F6201CE66D00CF55FD /* Assets.xcassets */,
 				22B3D2F8201CE66D00CF55FD /* LaunchScreen.storyboard */,
 				22B3D2FB201CE66D00CF55FD /* Info.plist */,
 			);
 			path = HarvardArtMuseum;
+			sourceTree = "<group>";
+		};
+		22FC8749201CF2B900E951C0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				22069188201D0316000884C3 /* ApiManager.swift */,
+				2206918F201D1993000884C3 /* MockManager.swift */,
+				22069191201D19AB000884C3 /* DataAccess.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		22FC874A201CF2C200E951C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22FC874D201CFBD600E951C0 /* Exhibitions */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22FC874B201CF2CC00E951C0 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				22FC874E201CFF0100E951C0 /* Exhibition.swift */,
+				2206918D201D0DE3000884C3 /* Venue.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		22FC874C201CF2E900E951C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22069193201D1BF8000884C3 /* ExhibitionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22FC874D201CFBD600E951C0 /* Exhibitions */ = {
+			isa = PBXGroup;
+			children = (
+				22B3D2F3201CE66D00CF55FD /* ExhibitionViewController.storyboard */,
+				22B3D2F1201CE66D00CF55FD /* ExhibitionViewController.swift */,
+			);
+			path = Exhibitions;
 			sourceTree = "<group>";
 		};
 		D0A4C343355D0DD81483C4D2 /* Pods */ = {
@@ -152,7 +221,7 @@
 			files = (
 				22B3D2FA201CE66D00CF55FD /* LaunchScreen.storyboard in Resources */,
 				22B3D2F7201CE66D00CF55FD /* Assets.xcassets in Resources */,
-				22B3D2F5201CE66D00CF55FD /* Main.storyboard in Resources */,
+				22B3D2F5201CE66D00CF55FD /* ExhibitionViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +239,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -178,6 +248,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,20 +296,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B3D2F2201CE66D00CF55FD /* ViewController.swift in Sources */,
+				22069189201D0316000884C3 /* ApiManager.swift in Sources */,
+				2206918E201D0DE3000884C3 /* Venue.swift in Sources */,
+				2206918C201D0D8F000884C3 /* AppConfig.swift in Sources */,
+				22B3D2F2201CE66D00CF55FD /* ExhibitionViewController.swift in Sources */,
+				22069190201D1993000884C3 /* MockManager.swift in Sources */,
+				22069194201D1BF8000884C3 /* ExhibitionCell.swift in Sources */,
 				22B3D2F0201CE66D00CF55FD /* AppDelegate.swift in Sources */,
+				22FC874F201CFF0100E951C0 /* Exhibition.swift in Sources */,
+				22069192201D19AB000884C3 /* DataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		22B3D2F3201CE66D00CF55FD /* Main.storyboard */ = {
+		22B3D2F3201CE66D00CF55FD /* ExhibitionViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				22B3D2F4201CE66D00CF55FD /* Base */,
 			);
-			name = Main.storyboard;
+			name = ExhibitionViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		22B3D2F8201CE66D00CF55FD /* LaunchScreen.storyboard */ = {
