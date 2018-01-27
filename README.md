@@ -1,0 +1,1 @@
+This is test iOS app presenting collections of Harvard Art Museum.
