@@ -7,5 +7,7 @@ target 'HarvardArtMuseum' do
   pod 'RealmSwift'
   pod 'PromiseKit'
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
+  pod 'SwinjectAutoregistration'
   pod 'AlamofireImage'
 end

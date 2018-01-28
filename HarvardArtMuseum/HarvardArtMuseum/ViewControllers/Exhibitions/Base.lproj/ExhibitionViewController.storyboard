@@ -59,20 +59,20 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder] [Placeholder] [Placeholder] " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xw-EN-wYV">
-                                                    <rect key="frame" x="15" y="280" width="330" height="44"/>
-                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                                    <rect key="frame" x="15" y="280" width="330" height="41.5"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04m-Vk-c2b">
-                                                    <rect key="frame" x="15" y="332" width="105.5" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                    <rect key="frame" x="15" y="333" width="99.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9j-DI-jU7">
-                                                    <rect key="frame" x="260.5" y="333" width="99.5" height="20"/>
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                    <rect key="frame" x="266.5" y="334.5" width="93.5" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -80,10 +80,10 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="q8N-0w-xxJ" secondAttribute="trailing" id="49t-GT-hGG"/>
                                                 <constraint firstItem="q8N-0w-xxJ" firstAttribute="top" secondItem="CTg-6L-MkU" secondAttribute="top" id="4nZ-wG-lNU"/>
-                                                <constraint firstItem="04m-Vk-c2b" firstAttribute="leading" secondItem="CTg-6L-MkU" secondAttribute="leadingMargin" id="5p0-o1-O0a"/>
+                                                <constraint firstAttribute="trailing" secondItem="u9j-DI-jU7" secondAttribute="trailing" constant="15" id="BXn-Cm-ycf"/>
                                                 <constraint firstItem="4Xw-EN-wYV" firstAttribute="top" secondItem="q8N-0w-xxJ" secondAttribute="bottom" constant="5" id="EXQ-aJ-5Fu"/>
-                                                <constraint firstItem="u9j-DI-jU7" firstAttribute="trailing" secondItem="CTg-6L-MkU" secondAttribute="trailingMargin" id="Ujj-GE-bKM"/>
                                                 <constraint firstItem="u9j-DI-jU7" firstAttribute="bottom" secondItem="CTg-6L-MkU" secondAttribute="bottomMargin" id="hPV-c0-0cL"/>
+                                                <constraint firstItem="04m-Vk-c2b" firstAttribute="leading" secondItem="CTg-6L-MkU" secondAttribute="leading" constant="15" id="lNx-9Z-cYM"/>
                                                 <constraint firstItem="4Xw-EN-wYV" firstAttribute="leading" secondItem="CTg-6L-MkU" secondAttribute="leading" constant="15" id="m5N-gb-Kr4"/>
                                                 <constraint firstItem="04m-Vk-c2b" firstAttribute="bottom" secondItem="CTg-6L-MkU" secondAttribute="bottomMargin" id="mb2-3x-aex"/>
                                                 <constraint firstItem="u9j-DI-jU7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="04m-Vk-c2b" secondAttribute="trailing" constant="10" id="r9l-Pi-1L8"/>
@@ -99,6 +99,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZdO-Bi-cBB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="B9w-iN-vwS"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,6 +115,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="HAo-T0-8MV"/>
+                    <connections>
+                        <outlet property="tableView" destination="STo-If-zid" id="jx3-z4-x3o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

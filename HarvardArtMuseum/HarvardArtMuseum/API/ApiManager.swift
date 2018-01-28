@@ -12,8 +12,13 @@ import RealmSwift
 
 class ApiManager: DataAccess {
     
-    func getExhibitions() -> Promise<List<Exhibition>>? {
-        return nil
+    func getExhibitions() -> Promise<List<Exhibition>> {
+        let exhibitions = List<Exhibition>()
+        return Promise(value: exhibitions)
+    }
+    
+    required init() {
+        
     }
     
 }

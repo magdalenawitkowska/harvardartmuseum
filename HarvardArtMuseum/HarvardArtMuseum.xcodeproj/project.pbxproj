@@ -13,6 +13,7 @@
 		22069190201D1993000884C3 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206918F201D1993000884C3 /* MockManager.swift */; };
 		22069192201D19AB000884C3 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069191201D19AB000884C3 /* DataAccess.swift */; };
 		22069194201D1BF8000884C3 /* ExhibitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069193201D1BF8000884C3 /* ExhibitionCell.swift */; };
+		22069197201D49B9000884C3 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22069196201D49B9000884C3 /* SwinjectStoryboard+Setup.swift */; };
 		22B3D2F0201CE66D00CF55FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D2EF201CE66D00CF55FD /* AppDelegate.swift */; };
 		22B3D2F2201CE66D00CF55FD /* ExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D2F1201CE66D00CF55FD /* ExhibitionViewController.swift */; };
 		22B3D2F5201CE66D00CF55FD /* ExhibitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3D2F3201CE66D00CF55FD /* ExhibitionViewController.storyboard */; };
@@ -29,6 +30,7 @@
 		2206918F201D1993000884C3 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 		22069191201D19AB000884C3 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		22069193201D1BF8000884C3 /* ExhibitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionCell.swift; sourceTree = "<group>"; };
+		22069196201D49B9000884C3 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		22B3D2EC201CE66D00CF55FD /* HarvardArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvardArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3D2EF201CE66D00CF55FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B3D2F1201CE66D00CF55FD /* ExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		22069195201D499F000884C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22069196201D49B9000884C3 /* SwinjectStoryboard+Setup.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		22B3D2E3201CE66D00CF55FD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		22B3D2EE201CE66D00CF55FD /* HarvardArtMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				22069195201D499F000884C3 /* Extensions */,
 				2206918A201D0D75000884C3 /* Config */,
 				22FC874C201CF2E900E951C0 /* Views */,
 				22FC874B201CF2CC00E951C0 /* DataModels */,
@@ -241,6 +252,8 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -250,6 +263,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22069189201D0316000884C3 /* ApiManager.swift in Sources */,
+				22069197201D49B9000884C3 /* SwinjectStoryboard+Setup.swift in Sources */,
 				2206918E201D0DE3000884C3 /* Venue.swift in Sources */,
 				2206918C201D0D8F000884C3 /* AppConfig.swift in Sources */,
 				22B3D2F2201CE66D00CF55FD /* ExhibitionViewController.swift in Sources */,

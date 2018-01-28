@@ -11,5 +11,7 @@ import PromiseKit
 import RealmSwift
 
 protocol DataAccess {
-    func getExhibitions() -> Promise<List<Exhibition>>?
+    func getExhibitions() -> Promise<List<Exhibition>>
+    
+    init()
 }

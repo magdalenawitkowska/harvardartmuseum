@@ -19,6 +19,10 @@ PODS:
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
   - Swinject (2.1.1)
+  - SwinjectAutoregistration (2.1.1):
+    - Swinject (~> 2.1)
+  - SwinjectStoryboard (1.1.2):
+    - Swinject (~> 2.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -26,6 +30,8 @@ DEPENDENCIES:
   - PromiseKit
   - RealmSwift
   - Swinject
+  - SwinjectAutoregistration
+  - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -34,7 +40,9 @@ SPEC CHECKSUMS:
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   Swinject: afea49fd95f392b41171669f165842879c48fad6
+  SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
+  SwinjectStoryboard: 92e75763c3299cdf627bef98a5180dc894864336
 
-PODFILE CHECKSUM: 67e81fa7b99b21a69689b7e824631aea3b9c3195
+PODFILE CHECKSUM: b467e417f06dc6c14c6c9e389826a0b2369f39e7
 
 COCOAPODS: 1.4.0

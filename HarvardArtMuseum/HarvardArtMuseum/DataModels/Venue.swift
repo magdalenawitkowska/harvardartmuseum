@@ -18,4 +18,12 @@ class Venue: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
+    
+    convenience init(id: Int, name: String, address: String, city: String) {
+        self.init()
+        self.id = id
+        self.name = name
+        self.address = address
+        self.city = city
+    }
 }

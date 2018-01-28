@@ -12,19 +12,36 @@ import Foundation
 class Exhibition: Object {
     @objc dynamic var id = 0
     @objc dynamic var title = ""
-    @objc dynamic var beginDate: Date?
-    @objc dynamic var endDate: Date?
+    @objc dynamic var beginDate: String?
+    @objc dynamic var endDate: String?
     @objc dynamic var imageURL: String?
     var venues = List<Venue>()
     @objc dynamic var primaryVenue: Venue? {
         return venues.count > 0 ? venues[0] : nil
     }
     
+    var times: String? {
+        guard let begin = beginDate, let end = endDate else {
+            return nil
+        }
+        let oldDateFormatter = DateFormatter()
+        oldDateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let newDateFormatter = DateFormatter()
+        newDateFormatter.dateFormat = "MMM dd, yyyy"
+        
+        guard let newBeginDate = oldDateFormatter.date(from: begin),
+            let newEndDate = oldDateFormatter.date(from: end) else {
+                return nil
+        }
+        return newDateFormatter.string(from: newBeginDate) + " - " + newDateFormatter.string(from: newEndDate)
+    }
+    
     override static func primaryKey() -> String? {
         return "id"
     }
     
-    convenience init(id: Int, title: String, int beginDate: Date?, int endDate: Date?, imageURL: String?, venues: List<Venue>) {
+    convenience init(id: Int, title: String, beginDate: String?, endDate: String?, imageURL: String?, venues: List<Venue>) {
         self.init()
         self.id = id
         self.title = title
